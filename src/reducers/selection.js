@@ -1,4 +1,4 @@
-const reducer = (state = [], action) => {
+const reducer = (state = [], action = {}) => {
     switch (action.type) {
         case 'UPDATE_SELECTION':
             return [...state, action.payload]
